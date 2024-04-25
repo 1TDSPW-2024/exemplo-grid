@@ -5,6 +5,44 @@
 }
 
 
+
+
+
+
+.container{
+  display: grid;
+  height: 100vh;
+
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 5px;
+
+
+}
+
+.container :nth-child(1){
+  grid-column: span 3;
+
+}
+.container :nth-child(3){
+  grid-column: span 2;
+  grid-row: span 2;
+
+
+}
+.container :nth-child(5){
+  grid-column: span 3;
+
+  
+
+}
+.box{
+  background-color: blueviolet;
+  color: #fff;
+  text-align: center;
+  border: 2px solid #0000ff;
+}
+
 /*
 #cabecalho{
   background-color: #130e0e;
